@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>DV Foram</title>
+
+    <!-- boostrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./">
+                <img src="./img/logo.png" height="50px" alt="DATA VIZ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="font-size: 1.1em;"
+                            href="./register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="font-size: 1.1em;"
+                            href="./#aboutevent">VIZ-A-THON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="font-size: 1.1em;"
+                            href="./#rules">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="font-size: 1.1em;"
+                            href="./#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="font-size: 1.1em;"
+                            href="./about.html">About Us</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="register_title text-center" data-aos="fade-right">
+        Register Here
+    </div>
+    <form action="/postregister" method="post">
+        <div class="row">
+            <div class="">
+                <div class="border form-custom1 me-auto ms-auto text-white">
+                    <div class="m-3">
+
+                        <div class="form-group">
+                            <label for="no_par">Enter the number of participants</label>
+                            <select class="form-control" onselect="change()" id="no_par" name="no_par" required>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="t_name">Team Name</label>
+                            <input type="text" class="form-control" id="t_name" name="t_name" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="twt">Twitter</label>
+                            <input type="text" class="form-control" id="twt" name="twt" required>
+                        </div><br>
+
+
+                        <div class="form-group">
+                            <a href="./img/AISA white logo.png" target="_blank">For payment click here </a>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="tra_id">Traction Id</label>
+                            <input type="text" class="form-control" id="trs_id" name="trs_id    " required>
+                        </div><br>
+
+                        <label for="formFile" class="form-label">Upload the screenshot here</label>
+                        <input class="form-control mb-2" type="file" accept="image/*"  id="formFile">
+                        <center>
+
+                            <button type="button" class="btn btn-primary btnn">Upload</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+
+
+            <div class="col-md-6">
+
+                <div class=" border form-custom me-auto ms-auto text-white">
+                    <div class="m-3">
+
+                        <div class="form-group">
+                            <label for="name1">Name (learder)</label>
+                            <input type="text" class="form-control" id="name1" name="name1" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email1">Email</label>
+                            <input type="email" class="form-control" id="email1" name="email1" required
+                                placeholder="abc@abc.com">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="c_no1">Contact No.</label>
+                            <input type="number" class="form-control" id="c_no1" name="c_no1" required maxlength="10"
+                                minlength="10">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="clg1">College</label>
+                            <input type="text" class="form-control" id="clg1" required name="clg1">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="year1">Year</label>
+                            <select class="form-control" id="year1" required name="year1">
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                <option>4th</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="branch1">Branch</label>
+                            <input type="text" class="form-control" required id="branch1" name="branch1">
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-6">
+                <div class=" border form-custom me-auto ms-auto text-white">
+                    <div class="m-3">
+                        <div class="form-group">
+                            <label for="name2">Name 2</label>
+                            <input type="text" class="form-control" id="name2" name="name2" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email2">Email</label>
+                            <input type="email" class="form-control" id="email2" name="email2" required
+                                placeholder="abc@abc.com">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="c_no2">Contact No.</label>
+                            <input type="number" class="form-control" id="c_no2" name="c_no2" required maxlength="10"
+                                minlength="10">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="clg2">College</label>
+                            <input type="text" class="form-control" id="clg2" required name="clg2">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="year2">Year</label>
+                            <select class="form-control" id="year2" required name="year2">
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                <option>4th</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="branch2">Branch</label>
+                            <input type="text" class="form-control" required id="branch2" name="branch2">
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-6 ">
+                <div class=" border form-custom me-auto ms-auto text-white">
+                    <div class="m-3">
+                        <div class="form-group">
+                            <label for="name3">Name 3</label>
+                            <input type="text" class="form-control" id="name3" name="name3" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email3">Email</label>
+                            <input type="email" class="form-control" id="email3" name="email3" required
+                                placeholder="abc@abc.com">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="c_no3">Contact No.</label>
+                            <input type="number" class="form-control" id="c_no3" name="c_no3" required maxlength="10"
+                                minlength="10">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="clg3">College</label>
+                            <input type="text" class="form-control" id="clg3" required name="clg3">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="year3">Year</label>
+                            <select class="form-control" id="year3" required name="year3">
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                <option>4th</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="branch3">Branch</label>
+                            <input type="text" class="form-control" required id="branch3" name="branch3">
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-6 ">
+                <div class=" border form-custom me-auto ms-auto text-white">
+                    <div class="m-3">
+                        <div class="form-group">
+                            <label for="name4">Name 4</label>
+                            <input type="text" class="form-control" id="name4" name="name4" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email4">Email</label>
+                            <input type="email" class="form-control" id="email4" name="email4" required
+                                placeholder="abc@abc.com">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="c_no4">Contact No.</label>
+                            <input type="number" class="form-control" id="c_no4" name="c_no4" required maxlength="10"
+                                minlength="10">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="clg3">College</label>
+                            <input type="text" class="form-control" id="clg4" required name="clg4">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="year4">Year</label>
+                            <select class="form-control" id="year4" required name="year4">
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                <option>4th</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="branch4">Branch</label>
+                            <input type="text" class="form-control" required id="branch4" name="branch4">
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <center>
+
+            <button type="submit" class="mt-3 btn btn-primary btnn">Submit</button>
+        </center>
+
+    </form>
+
+    <footer class=" text-white mt-5" style="background-color: rgba(255,255,255,0.1);">
+        <div class="container mt-2">
+            <span class="">
+                <center>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-2 mt-5 ms-auto">
+                                    <img src="./img/clglogo.png" alt="">
+                                </div>
+                                <div class="col-md-10">
+
+                                    <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
+                                        Ramnath Agarwal Charitable Trust's <br>
+                                        <h5>
+                                            <b>
+                                                Vishwakarma Institute Of Information Technology
+                                                <br>
+                                            </b>
+                                        </h5>
+
+                                        (An Autonomous Institute affiliated to Savitribai Phule Pune University)
+                                        An ISO 9001-2015 Certified Institute Accredited with 'A' Grade By NAAC
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-2 mt-5 ms-auto">
+                                    <img src="./img/AISA white logo.png" height="80px" alt="">
+                                </div>
+                                <div class="col-md-10">
+
+                                    <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
+
+                                        <h5>
+                                            <b>
+                                                Artificial Intelligence Student Association
+                                                <br>
+                                            </b>
+                                        </h5>
+
+                                        Dept. of AI&DS , VIIT Pune <br>
+                                        It's the Right one , It’s the Bright one! <br>
+                                        _Unleashing the power of data_👨🏻‍💻
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                </center>
+            </span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

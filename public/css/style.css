@@ -1,0 +1,121 @@
+.bg{
+    background-image: url('../img/Logo_18.jpeg');
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.9);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    /* font-weight: bold; */
+    color: #ffffff;
+}
+/* .tagline{
+     margin-left: 20%; 
+    
+} */
+
+.aboutevent{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    font-size: 1.1em;
+}
+.title{
+    margin-top: 20%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+.register_title{
+    margin-top: 5%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+.timeline{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.1em;
+}
+.border{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 2%;
+   
+}
+.form-custom1{
+    width: 50%;
+}
+.form-custom{
+    width: 80%;
+}
+.viit{
+    text-align: left; 
+    margin-left: 15%;
+}
+.aisa{
+    text-align: left; 
+    margin-left: 15%;
+}
+.btnn{
+    width: 25%;
+}
+.datametica{
+    margin-top: 10%;
+}
+#detametica{
+    width: 25%;
+}
+@media screen and (max-width: 460px) {
+    .tagline{
+        font-size: 3em;
+        text-align: center;
+    }
+    #detametica{
+        width: 80%;
+    }
+    .datametica{
+        margin-top: 20%;
+    }
+    .btnn{
+        width: 50%;
+    }
+    .viit{
+        text-align: left; 
+        margin-left: 5%;
+    }
+    .aisa{
+        text-align: left; 
+        margin-left: 5%;
+    }
+    .bg{
+        background-image: url('../img/Logo_19.jpeg');
+        background-size: 100% 100%;
+        background-color: rgba(0,0,0,0.9);
+        
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+    .register_title{
+        margin-top: 15%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #ffffff;
+        
+    }
+    .form-custom{
+        width: 80%;
+    }
+    .form-custom1{
+        width: 80%;
+    }
+  }
