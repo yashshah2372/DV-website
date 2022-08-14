@@ -77,7 +77,7 @@
 
                         <div class="form-group">
                             <label for="no_par">Enter the number of participants</label>
-                            <select class="form-control" onselect="change()" id="no_par" name="no_par" >
+                            <select class="form-control" onselect="change()" id="no_par" required name="no_par" >
                                 <option>3</option>
                                 <option>4</option>
                             </select>
@@ -85,29 +85,29 @@
 
                         <div class="form-group">
                             <label for="t_name">Team Name</label>
-                            <input type="text" class="form-control" id="t_name" name="t_name" >
+                            <input type="text" class="form-control" required id="t_name" name="t_name" >
                         </div><br>
 
                         <div class="form-group">
                             <label for="twt">Twitter</label>
-                            <input type="text" class="form-control" id="twt" name="twt" >
+                            <input type="text" class="form-control" required id="twt" name="twt" >
                         </div><br>
 
 
                         <div class="form-group">
-                            <a href="./img/AISA white logo.png" target="_blank">For payment click here </a>
+                            <a href="./img/Transaction.pdf"  target="_blank">For payment click here </a>
                         </div><br>
 
                         <div class="form-group">
                             <label for="tra_id">Traction Id</label>
-                            <input type="text" class="form-control" id="trs_id" name="trs_id    " >
+                            <input type="text" class="form-control" required id="trs_id" name="trs_id    " >
                         </div><br>
 
                         <label for="formFile" class="form-label" >Upload the screenshot here</label>
-                        <input class="form-control mb-2" type="file" id="formFile" name="formFile" accept="image/*" required>
+                        <input class="form-control mb-2"  type="file" id="formFile" name="formFile" accept="image/*" required>
                         <center>
 
-                            <button type="button" class="btn btn-primary btnn">Upload</button>
+                            <!-- <button type="button" class="btn btn-primary btnn">Upload</button> -->
                         </center>
                     </div>
                 </div>
@@ -125,27 +125,27 @@
 
                         <div class="form-group">
                             <label for="name1">Name (learder)</label>
-                            <input type="text" class="form-control" id="name1" name="name1" >
+                            <input type="text" required class="form-control" id="name1" name="name1" >
                         </div><br>
                         <div class="form-group">
                             <label for="email1">Email</label>
-                            <input type="email" class="form-control" id="email1" name="email1" 
+                            <input type="email" required class="form-control" id="email1" name="email1" 
                                 placeholder="abc@abc.com">
                         </div><br>
 
                         <div class="form-group">
                             <label for="c_no1">Contact No.</label>
-                            <input type="tel" pattern="[0-9]{10}" class="form-control" id="c_no1" name="c_no1">
+                            <input type="tel" required pattern="[0-9]{10}" class="form-control" id="c_no1" name="c_no1">
                         </div><br>
 
                         <div class="form-group">
                             <label for="clg1">College</label>
-                            <input type="text" class="form-control" id="clg1"  name="clg1">
+                            <input type="text" required class="form-control" id="clg1"  name="clg1">
                         </div><br>
 
                         <div class="form-group">
                             <label for="year1">Year</label>
-                            <select class="form-control" id="year1"  name="year1">
+                            <select class="form-control" required id="year1"  name="year1">
                                 <option>1st</option>
                                 <option>2nd</option>
                                 <option>3rd</option>
@@ -155,7 +155,7 @@
 
                         <div class="form-group">
                             <label for="branch1">Branch</label>
-                            <input type="text" class="form-control"  id="branch1" name="branch1">
+                            <input type="text" class="form-control" required  id="branch1" name="branch1">
                         </div><br>
                     </div>
                 </div>
@@ -171,28 +171,28 @@
                     <div class="m-3">
                         <div class="form-group">
                             <label for="name2">Name 2</label>
-                            <input type="text" class="form-control" id="name2" name="name2" >
+                            <input type="text" class="form-control" required id="name2" name="name2" >
                         </div><br>
                         <div class="form-group">
                             <label for="email2">Email</label>
-                            <input type="email" class="form-control" id="email2" name="email2" 
+                            <input type="email" class="form-control" required id="email2" name="email2" 
                                 placeholder="abc@abc.com">
                         </div><br>
 
                         <div class="form-group">
                             <label for="c_no2">Contact No.</label>
-                            <input type="number" class="form-control" id="c_no2" name="c_no2"  maxlength="10"
+                            <input type="number" class="form-control" required id="c_no2" name="c_no2"  maxlength="10"
                                 minlength="10">
                         </div><br>
 
                         <div class="form-group">
                             <label for="clg2">College</label>
-                            <input type="text" class="form-control" id="clg2"  name="clg2">
+                            <input type="text" class="form-control" id="clg2" required  name="clg2">
                         </div><br>
 
                         <div class="form-group">
                             <label for="year2">Year</label>
-                            <select class="form-control" id="year2"  name="year2">
+                            <select class="form-control" id="year2" required  name="year2">
                                 <option>1st</option>
                                 <option>2nd</option>
                                 <option>3rd</option>
@@ -202,7 +202,7 @@
 
                         <div class="form-group">
                             <label for="branch2">Branch</label>
-                            <input type="text" class="form-control"  id="branch2" name="branch2">
+                            <input type="text" class="form-control"  required id="branch2" name="branch2">
                         </div><br>
                     </div>
                 </div>
@@ -218,28 +218,28 @@
                     <div class="m-3">
                         <div class="form-group">
                             <label for="name3">Name 3</label>
-                            <input type="text" class="form-control" id="name3" name="name3" >
+                            <input type="text" class="form-control" required id="name3" name="name3" >
                         </div><br>
                         <div class="form-group">
                             <label for="email3">Email</label>
-                            <input type="email" class="form-control" id="email3" name="email3" 
+                            <input type="email" class="form-control" required id="email3" name="email3" 
                                 placeholder="abc@abc.com">
                         </div><br>
 
                         <div class="form-group">
                             <label for="c_no3">Contact No.</label>
-                            <input type="number" class="form-control" id="c_no3" name="c_no3"  maxlength="10"
+                            <input type="number" class="form-control" required id="c_no3" name="c_no3"  maxlength="10"
                                 minlength="10">
                         </div><br>
 
                         <div class="form-group">
                             <label for="clg3">College</label>
-                            <input type="text" class="form-control" id="clg3"  name="clg3">
+                            <input type="text" class="form-control" required id="clg3"  name="clg3">
                         </div><br>
 
                         <div class="form-group">
                             <label for="year3">Year</label>
-                            <select class="form-control" id="year3"  name="year3">
+                            <select class="form-control" id="year3" required  name="year3">
                                 <option>1st</option>
                                 <option>2nd</option>
                                 <option>3rd</option>
@@ -249,7 +249,7 @@
 
                         <div class="form-group">
                             <label for="branch3">Branch</label>
-                            <input type="text" class="form-control"  id="branch3" name="branch3">
+                            <input type="text" class="form-control" required  id="branch3" name="branch3">
                         </div><br>
                     </div>
                 </div>
