@@ -5,6 +5,9 @@
     background-blend-mode: darken;
     background-attachment: fixed;
 }
+.navbar{
+    background-color: transparent;
+}
 .navbar-brand{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
@@ -75,6 +78,9 @@
     width: 25%;
 }
 @media screen and (max-width: 460px) {
+    .navbar{
+        background-color: black;
+    }
     .tagline{
         font-size: 3em;
         text-align: center;
