@@ -5,6 +5,9 @@
     background-blend-mode: darken;
     background-attachment: fixed;
 }
+a{
+    text-decoration: none;
+}
 .navbar{
     background-color: transparent;
 }

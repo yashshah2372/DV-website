@@ -78,7 +78,7 @@ app.post('/postregister',async (req,res)=>{
             })
             user.save().then((user)=>{
                 //login
-                return res.redirect('/')
+                res.send('<h3>Successfully registered</h3> <a href="/">Go to home page</a>')
             }).catch(err =>{
                 res.send('Please check all the fields again, email should be unique')
             })
