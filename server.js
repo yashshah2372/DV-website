@@ -55,15 +55,14 @@ app.post('/postregister',async (req,res)=>{
     //console.log(result);
     let result = await uploadFile(req.files.formFile,"externalimages");
     const formFile = result;
-    const { no_par, t_name, name1, name2, name3, name4, email1, c_no1, clg1, year1, branch1,
+    const { no_par, t_name, trs_id, name1, name2, name3, name4, email1, c_no1, clg1, year1, branch1,
         email2, c_no2, clg2, year2, branch2,
         email3, c_no3, clg3, year3, branch3,
         email4, c_no4, clg4, year4, branch4 } = req.body
-    //     console.log(req.body)
     // //Validate Request
-    if( !no_par || !t_name || !name1 || !name2 || !name3 || !email1 || !c_no1 || !clg1|| !year1 || !branch1 || !email2 || !c_no2 || !clg2|| !year2 || !branch2 || !email3 || !c_no3 || !clg3|| !year3 || !branch3 ){
+    if( !no_par || !t_name || !trs_id || !name1 || !name2 || !name3 || !email1 || !c_no1 || !clg1|| !year1 || !branch1 || !email2 || !c_no2 || !clg2|| !year2 || !branch2 || !email3 || !c_no3 || !clg3|| !year3 || !branch3 ){
         // req.flash('error', 'ALl fields are required')
-        console.log('ALl fields are required')
+        console.log('Al fields are required')
         return res.redirect('/register')
     }
     //Check existance of team name
@@ -74,7 +73,7 @@ app.post('/postregister',async (req,res)=>{
         }
         else{
             const user = new User({
-                no_par, t_name, formFile, name1, name2, name3, name4, email1, c_no1, clg1, year1, branch1,email2, c_no2, clg2, year2, branch2,email3, c_no3, clg3, year3, branch3,email4, c_no4, clg4, year4, branch4
+                no_par, t_name, trs_id, formFile, name1, name2, name3, name4, email1, c_no1, clg1, year1, branch1,email2, c_no2, clg2, year2, branch2,email3, c_no3, clg3, year3, branch3,email4, c_no4, clg4, year4, branch4
             })
             user.save().then((user)=>{
                 //login

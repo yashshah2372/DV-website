@@ -6,6 +6,7 @@ const Schema = mongoose.Schema //S is capital that is storing a class or constru
 const userSchema = new Schema({
     no_par: {type: Number, required: false},
     t_name: { type: String, required: false, unique: true},
+    trs_id: { type: String, required: false, unique: true},
     formFile:{ type: String, required: false},
     name1: { type: String, required: false},
     name2: { type: String, required: false},
