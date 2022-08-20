@@ -80,7 +80,15 @@ a{
 #detametica{
     width: 25%;
 }
+.tt{
+    height:100%;
+    width: 70%;
+}
 @media screen and (max-width: 460px) {
+    .tt{
+        height: 100%;
+        width: 95%;
+    }
     .navbar{
         background-color: black;
     }
