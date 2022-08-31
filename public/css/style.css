@@ -22,9 +22,10 @@ a{
     
 } */
 .footer{
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
+    
     width: 100%;
     background-color: red;
     color: white;
@@ -93,6 +94,7 @@ a{
     width: 70%;
 }
 @media screen and (max-width: 460px) {
+    
     .tt{
         height: 100%;
         width: 95%;
@@ -130,7 +132,7 @@ a{
         background-attachment: fixed;
     }
     .register_title{
-        margin-top: 15%;
+        margin-top: 25%;
         font-family: 'Ubuntu', sans-serif;
         font-size: 2.5em;
         font-weight: bold;
